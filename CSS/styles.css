@@ -1,0 +1,249 @@
+
+.navbar-brand {
+    font-family: 'Cookie', cursive;
+    text-align: center;
+    font-size: 60px;
+    padding-right: 55%;
+}
+
+.bg-img {
+  background-image: url("https://github.com/arunk9805/css-myPersonalSite/blob/main/bg-image.png?raw=true");
+  height: auto;
+  background-size: cover;
+}
+
+.nav-link {
+  font-family: 'Lato', sans-serif;
+  font-size: 12px;
+  padding: 0 25px;
+}
+
+.btn-danger {
+  margin: 20px 0;
+  background-color: rgba(188, 24, 35, 0.5);
+}
+
+.main-title {
+  font-family: 'Cookie', cursive;
+  font-size: 60px;;
+  padding: 0 15%;
+}
+
+.collapse.show {
+  line-height: 3;
+}
+
+.main {
+  color: white;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.time {
+  font-family: 'Lato', sans-serif;
+  font-size: 17.7px;
+  margin: 50px 0px 5px 0px;
+  padding: 20px 0px 0px 0px;
+}
+
+.wine {
+  color: #bc1823;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+}
+.dine{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+}
+.main-heading {
+  font-family: 'Qwitcher Grypen', cursive;
+  font-size: 193px;
+  margin: 0;
+}
+
+.main-para {
+  font-family: 'Lato', sans-serif;
+  font-size: 28px;
+  background-color: rgba(188, 24, 35, 0.5);
+  margin-bottom: 30px;
+  max-width: 590px;
+}
+
+.make-res-bg {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 19.5px;
+  background-color: rgba(188, 24, 35, 0.8);
+  max-width: 200px;
+  margin-top: 50px;
+}
+
+.logo-div {
+  margin: 0px 20px 30px 20px;
+}
+.logos {
+  margin: 0px 20px 20px 20px;
+}
+
+/* DISH */
+.dish-container {
+  margin: 100px 0px 150px;
+}
+
+.frame-1 {
+  position: absolute;
+  top: 65px;
+  left: 80px;
+  z-index: -1;
+}
+
+.taste-of-italy {
+  font-family: 'Cookie', cursive;
+  margin-top: 50px;
+  text-align: right;
+  font-size: 50px;
+  z-index: 1;
+}
+
+.dish-col-6 {
+  padding: 30px;
+  margin: 100px 0px;
+}
+
+.heading-1 {
+  font-size: 32px;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  padding: 0px 80px;
+}
+
+.para-1 {
+  font-family: 'Open sans', sans-serif;
+  font-size: 18px;
+  padding: 20px 50px 0px 80px;
+}
+
+/* WINE */
+
+.wine-container {
+  margin-bottom: 100px;
+  padding-top: 100px;
+}
+
+.frame-2 {
+  position: absolute;
+  top: 65px;
+  right: 135px;
+  z-index: -1;
+}
+
+.taste-of-red {
+  font-family: 'Cookie', cursive;
+  margin-top: 50px;
+  text-align: left;
+  font-size: 50px;
+  z-index: 1;
+}
+
+/* MENU */
+.menu-container {
+  padding-bottom: 50px;
+  background-color: #291b25;
+}
+
+.menu-heading {
+  text-align: center;
+  font-family: 'Qwitcher Grypen', cursive;
+  font-size: 36px;
+  padding: 20px 0px 5px;
+}
+
+ .menu-details {
+  font-size: 20px;
+  text-align: center;
+  /* margin-bottom: 40px; */
+  /* padding: 0px 300px; */
+}
+
+.menu-img1 {
+  /* position: absolute;
+  z-index: 1; */
+  margin: 20px 0px 20px 0px;
+}
+
+ .dish-name {
+  padding-top: 10px;
+  font-size: 22.5px;
+}
+
+.dish-detail {
+  font-size: 15px;
+}
+
+.wine-icon {
+
+}
+
+.dish-icon {
+
+}
+
+/* TESTIMONIAL */
+
+.testimonials {
+  text-align: center;
+  margin: 70px 0px 50px 0px;
+}
+
+.testimonial-heading {
+  font-family: 'Qwitcher Grypen', cursive;
+  font-size: 52px;
+}
+
+.testimonial-detail {
+  font-size: 23px;
+  margin: 10px 0px;
+}
+
+.testimonial-row {
+    margin: 150px 0px;
+}
+
+.testimonial-text {
+  font-size: 27px;
+  padding-left: 50px;
+}
+
+/* RESERVATION */
+.reservation {
+    background-image: url("./reservation-img.png");
+    height: 100%;
+    background-size: cover;
+    text-align: center;
+    color: white;
+
+}
+
+.res-heading {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 5% 0% 2% 0%;
+}
+
+.res-text {
+    font-size: 26px;
+}
+
+.form-row {
+    margin: 1% 0% 4% 0%;
+}
+
+.form-mod {
+    margin: 2% 0%;
+    text-align: left;
+    font-size: 1.5rem;
+}
+
+.form-btn {
+    margin-top: 4%;
+}
