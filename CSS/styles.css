@@ -1,15 +1,33 @@
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+.container-fluid {
+  padding-top: 40px;
+  padding-right: 10px;
+}
 
 .navbar-brand {
-    font-family: 'Cookie', cursive;
-    text-align: center;
-    font-size: 60px;
-    padding-right: 55%;
+  font-family: 'Cookie', cursive;
+  text-align: right;
+  font-size: 60px;
 }
 
 .bg-img {
-  background-image: url("https://github.com/arunk9805/css-myPersonalSite/blob/main/bg-image.png?raw=true");
+  background-image: url("bg-image.png");
   height: auto;
   background-size: cover;
+}
+
+.bg-img ul {
+  text-align: right;
+}
+
+.bg-img li {
+  margin-left: 10px;
 }
 
 .nav-link {
@@ -21,12 +39,6 @@
 .btn-danger {
   margin: 20px 0;
   background-color: rgba(188, 24, 35, 0.5);
-}
-
-.main-title {
-  font-family: 'Cookie', cursive;
-  font-size: 60px;;
-  padding: 0 15%;
 }
 
 .collapse.show {
@@ -52,20 +64,22 @@
   font-size: 22px;
   font-weight: bold;
 }
-.dine{
+
+.dine {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 22px;
   font-weight: 400;
 }
+
 .main-heading {
   font-family: 'Qwitcher Grypen', cursive;
-  font-size: 193px;
+  font-size: 13.5vw;
   margin: 0;
 }
 
 .main-para {
   font-family: 'Lato', sans-serif;
-  font-size: 28px;
+  font-size: 27.037px;
   background-color: rgba(188, 24, 35, 0.5);
   margin-bottom: 30px;
   max-width: 590px;
@@ -73,7 +87,7 @@
 
 .make-res-bg {
   font-family: 'Open Sans', sans-serif;
-  font-size: 19.5px;
+  font-size: 1.3vm;
   background-color: rgba(188, 24, 35, 0.8);
   max-width: 200px;
   margin-top: 50px;
@@ -82,40 +96,45 @@
 .logo-div {
   margin: 0px 20px 30px 20px;
 }
+
 .logos {
   margin: 0px 20px 20px 20px;
 }
+
+.address {
+  text-align: right;
+  padding-right: 30px;
+  margin-bottom: 15px;
+}
+
+
+
 
 /* DISH */
 .dish-container {
   margin: 100px 0px 150px;
 }
 
-.frame-1 {
-  position: absolute;
-  top: 65px;
-  left: 80px;
-  z-index: -1;
-}
-
-.taste-of-italy {
+.taste-of-italy,
+.taste-of-red {
   font-family: 'Cookie', cursive;
   margin-top: 50px;
   text-align: right;
+  padding-right: 20px;
   font-size: 50px;
   z-index: 1;
 }
 
-.dish-col-6 {
-  padding: 30px;
-  margin: 100px 0px;
+.img-dish {
+  width: 80%;
+  height: auto;
 }
 
 .heading-1 {
   font-size: 32px;
   font-family: 'Lato', sans-serif;
   font-weight: bold;
-  padding: 0px 80px;
+  padding: 10px 80px;
 }
 
 .para-1 {
@@ -127,66 +146,93 @@
 /* WINE */
 
 .wine-container {
-  margin-bottom: 100px;
-  padding-top: 100px;
+  margin: 100px 0px 250px 0px;
 }
 
-.frame-2 {
-  position: absolute;
-  top: 65px;
-  right: 135px;
-  z-index: -1;
-}
-
-.taste-of-red {
-  font-family: 'Cookie', cursive;
-  margin-top: 50px;
-  text-align: left;
-  font-size: 50px;
-  z-index: 1;
-}
 
 /* MENU */
 .menu-container {
+  position: relative;
   padding-bottom: 50px;
   background-color: #291b25;
 }
 
 .menu-heading {
+  position: relative;
+  z-index: 1;
   text-align: center;
   font-family: 'Qwitcher Grypen', cursive;
   font-size: 36px;
   padding: 20px 0px 5px;
 }
 
- .menu-details {
+.menu-details {
+  position: relative;
+  z-index: 1;
   font-size: 20px;
   text-align: center;
-  /* margin-bottom: 40px; */
-  /* padding: 0px 300px; */
 }
 
 .menu-img1 {
-  /* position: absolute;
-  z-index: 1; */
+  position: relative;
+  z-index: 1;
   margin: 20px 0px 20px 0px;
 }
 
- .dish-name {
+.dish-name {
+  position: relative;
+  z-index: 1;
   padding-top: 10px;
   font-size: 22.5px;
+  text-align: left;
 }
 
 .dish-detail {
+  position: relative;
+  z-index: 1;
   font-size: 15px;
+  text-align: left;
+}
+
+.pricing {
+  text-align: left;
+}
+
+.grapes-icon-left, .grapes-icon-right, .wine-icon, .dish-icon {
+  position: absolute;
+  z-index: 0;
+  padding-top: 10px;
+  width: 10%;
+  height: auto;
+}
+
+.grapes-icon-left {
+  top: 10px;
+  left: 10%;
+}
+
+.grapes-icon-right {
+  top: 10px;
+  right: 10%;
 }
 
 .wine-icon {
-
+  left: -50px;
+  top: 545px;
 }
 
-.dish-icon {
 
+
+.dish-icon {
+  right: -20px;
+  bottom: 330px;
+}
+
+.menu-img-price {
+  align-items: center;
+  text-align: center;
+  padding: 0px 20px;
+  margin-top: 70px;
 }
 
 /* TESTIMONIAL */
@@ -202,48 +248,219 @@
 }
 
 .testimonial-detail {
-  font-size: 23px;
+  font-size: 2vw;
   margin: 10px 0px;
 }
 
 .testimonial-row {
-    margin: 150px 0px;
+  margin: 150px 0px;
 }
 
 .testimonial-text {
-  font-size: 27px;
+  /* font-size: 27px; */
+  font-size: 2vw;
   padding-left: 50px;
 }
 
+.carousel-control-next, .carousel-control-prev , .carousel-indicators  {
+    filter: invert(100%);
+  }
+
 /* RESERVATION */
-.reservation {
-    background-image: url("./reservation-img.png");
-    height: 100%;
-    background-size: cover;
-    text-align: center;
-    color: white;
+#reservation {
+  background-image: url("./reservation-img.png");
+  height: 100%;
+  background-size: cover;
+  text-align: center;
+  color: white;
 
 }
 
 .res-heading {
-    font-family: 'Source Sans Pro', sans-serif;
-    margin: 5% 0% 2% 0%;
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 5% 0% 2% 0%;
 }
 
 .res-text {
-    font-size: 26px;
+  font-size: 26px;
 }
 
 .form-row {
-    margin: 1% 0% 4% 0%;
+  margin: 1% 0% 4% 0%;
 }
 
 .form-mod {
-    margin: 2% 0%;
-    text-align: left;
-    font-size: 1.5rem;
+  margin: 2% 0%;
+  text-align: left;
+  font-size: 1.5rem;
 }
 
 .form-btn {
-    margin-top: 4%;
+  margin-top: 4%;
+}
+
+@media (min-width: 1085px) {
+  .navbar-brand.abs {
+    position: absolute;
+    width: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+}
+
+
+@media (max-width : 770px) {
+
+
+  .container-fluid {
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .main-heading {
+    font-size: 100px;
+  }
+
+  .main-para {
+    font-size: 16px;
+  }
+
+  #make-reservation {
+    font-size: 14px;
+  }
+
+  .logo-div {
+    margin: 8px;
+  }
+
+  .logos {
+    margin: 8px;
+  }
+
+  .address {
+    font-size: small;
+  }
+
+  .bg-img footer {
+    margin-top: 60px;
+  }
+
+
+  .wine-container,
+  .dish-container {
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .img-dish {
+    width: 80%;
+    height: auto;
+  }
+
+  .wine-container {
+    margin-bottom: 100px;
+  }
+
+
+  /* MENU */
+  .grapes-icon-left,
+  .grapes-icon-right {
+    padding-top: 10px;
+    width: 15%;
+    height: auto;
+  }
+
+  .grapes-icon-left {
+    align-items: center;
+  }
+
+  .grapes-icon-right {
+    align-items: center;
+    right: 9%;
+  }
+
+  .menu-img-price {
+    align-items: center;
+    text-align: left;
+  }
+
+  .menu-img1 {
+    border-radius: 50%;
+  }
+
+  .wine-icon {
+    display: none;
+
+  }
+
+  .dish-icon {
+    display: none;
+  }
+
+
+  /* TESTEMONIAL */
+  .testimonial-text, .testimonial-detail {
+      font-size: 16px;
+      margin-top: 30px;
+  }
+
+  .carousel-item, .testimonial-row  {
+    margin-top: 10px;
+    padding: 0px;
+  }
+
+  
+  /*  <!-- RESERVATION --> */
+
+  .res-text {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}
+
+
+/* ERROR PAGEs */
+
+.event-bg-img {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("error-msg-img-1.jpg");
+}
+
+.error-img {
+  height: 100vh;
+  background-size: cover;
+  position: relative;
+}
+
+.error-msg {
+  border: 3px solid #ddd;
+  border-color: #ddd;
+  padding: 0px 20px 20px 20px;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.error-msg button {
+  border: none;
+  border-radius: 10px;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+}
+
+.gallery-bg-img {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("error-msg-img-2.jpg");
+}
+
+.contact-bg-img {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("error-msg-img-3.jpg");
 }
