@@ -1,0 +1,20 @@
+{
+  "name": "project-italico",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "express": "^4.18.3",
+    "jsdom": "^24.0.0",
+    "mongoose": "^8.2.2",
+    "nodemon": "^3.1.0"
+  }
+}
