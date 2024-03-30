@@ -11,19 +11,19 @@ const guestShema = new mongoose.Schema({
     },
     PhoneNumber: {
         type: String,
-        required: true
+        // required: true
     },
     email: {
         type: String,
-        required: true
+        // required: true
     },
     time: {
         type: String,
-        required: true
+        // required: true
     },
     date: {
         type: Date,
-        required: true
+        // required: true
     }
 }, {timestamps: true});
 

@@ -8,7 +8,6 @@ const dom = new JSDOM(htmlContent);
 global.document = dom.window.document;
 
 document.addEventListener('DOMContentLoaded', async ()=> {
-    // document.getElementById('reservation-form').addEventListener('submit', async function(event) {
     document.getElementById('reservation-form').addEventListener('change', async function(event) {
         event.preventDefault();
 

@@ -1,39 +1,39 @@
 import mongoose from "mongoose";
+import ejs from "ejs";
 import express from 'express';
 import bodyParser from "body-parser";
 import cors from 'cors';
 import GuestData from "./guest.model.js";
-// import { dirname } from 'path';
-// import { fileURLToPath } from "url";
+import { dirname } from 'path';
+import { fileURLToPath } from "url";
 
-// const __dirname = dirname(fileURLToPath(import.meta.url));
+const __dirname = dirname(fileURLToPath(import.meta.url));
 
 const app = express();
 
 app.use(cors());
 app.use(bodyParser.urlencoded({extended: true}))
 app.use(express.urlencoded({extended:true}));
+app.set('view engine', 'ejs');
 app.use(express.static("public"));
 
 
 app.get("/", (req, res) => {
-    res.sendFile('index.html');
+    res.sendFile(__dirname + 'index.html');
 });
 
-app.post("/", async (req, res) => {
+app.post("/regSuccess", async (req, res) => {
     try {
         const guestData = new GuestData(req.body);
         const saveGuestData = await guestData.save();
         console.log("Reservation Successful: ", saveGuestData);
+        
+        res.render(__dirname + "/views/regSuccess.ejs", {saveGuestData});
     } catch (error) {
         console.log("Error while saving data: ", error);
         res.status(500).send("Server-side ERROR!!\n Error while saving data!")
     }
 });
-
-// app.get("/regSuccess", (req, res) => {
-//     res.sendFile()
-// })
 
 const connectDB = async () => {
     try {
