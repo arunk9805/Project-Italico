@@ -1,12 +1,169 @@
-<body>
-    <h1>
-        Guest Booking Details
-    </h1>
-    <p>Guest Name: <%=saveGuestData.Name %></p>
-    <p>GuestNumber: <%=saveGuestData.GuestNumber %></p>
-    <p>Phone Number <%=saveGuestData.PhoneNumber %></p>
-    <p>Email: <%=saveGuestData.email %></p>
-    <p>Date: <%=saveGuestData.date %></p>
-    <p>Time: <%=saveGuestData.time %></p>
-    <h3>Thankyou 💖</h3>
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cookie&family=Lato:wght@300;400&family=Open+Sans:wght@300&family=Qwitcher+Grypen&family=Source+Sans+Pro:wght@200;400;700&display=swap"
+        rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./CSS/styles.css">
+    <title>Italic</title>
+
+</head>
+
+<body >
+    <div class="bg-img-1">
+        <nav class="navbar navbar-expand-md navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand abs text-white" href="#">Italico</a>
+                <button class="navbar-toggler ms-auto bg-light" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapseNavbar">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#about-us">ABOUT US<span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#menu-id">MENU</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#reservation">RESERVATION</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="./event-page.html">EVENT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="./gallery.html">GALLERY</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="./contact.html">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="main  container-fluid ">
+
+            <div class="row justify-content-center">
+                <div class="col-lg booking-note">
+                    <h1 class="reg-heading">Thank you for booking!</h1>
+                    <p class="reg-text">A confirmation of your reservation will be sent to you by email.</p>
+                </div>
+            </div>
+            <img class="hr-img" src="/image/image-removebg-preview (1).png" alt="" width="50%">
+            <div class="reg-cointainer">
+                <div>
+                    <p class="reg-details">Reservation Details:</p>
+                    <p class="guest-info"><%= `${saveGuestData.Name}, ${saveGuestData.time}, ${saveGuestData.GuestNumber} Guests` %></p>
+                    <!-- <p class="guest-info">Arun Kumar, Mar 20, 2024, 05:34, 2 Guests</p> -->
+                    <div class="cancel-calender">
+                        <a class="cancel-booking" href="#reservation"><button type="button" id="make-reservation"
+                                class="btn btn-danger btn-lg" name="button">Cancel Booking</button></a>
+                        <a class="calender" href="">Add to Calender <i class="fa-solid fa-calendar-days"
+                                style="color: #f9f7f1;"></i></a>
+                    </div>
+                </div>
+
+                <div class="banner-base">
+                <div class="banner-container">
+                    <div class="banner">
+                        <div class="banner-date">
+                            <p class="reg-day"><%= convertedDate[0] %></p>
+                            <h1 class="reg-date"><%= convertedDate[1] %></h1>
+                            <h4 class="reg-month"><%= convertedDate[2] %></h4>
+                            <h4 class="reg-year"><%= convertedDate[3] %></h4>
+                        </div>
+                        <div class="svg">
+                            <svg class="JQXKTw" viewBox="-1 -1 54 66" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-opacity="0.3"
+                                    d="M17.3427 62.4985C20.0086 63.4051 23.0394 64 26.014 64C28.9887 64 31.8511 63.49 34.4889 62.5834C34.5451 62.5551 34.6012 62.5551 34.6573 62.5268C44.5634 58.9004 51.8597 49.3245 52 38.1337V0H0V38.1054C0.140313 49.3811 7.32434 58.9571 17.3427 62.4985Z"
+                                    stroke="white" stroke-width="0.7" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+        </div>
+        <footer>
+            <div class="containter-fluid">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="logo-div">
+                            <a class="cancel-booking" href="./index.html"><button type="button" id="make-reservation"
+                                    class="btn btn-outline-light btn-sm" name="button">BOOKINGS</button></a>
+                        </div>
+                    </div>
+                    <div class="col-6 address">
+                        <a class="whatsapp" href="https://web.whatsapp.com/"
+                            style=" padding-right:15px; text-decoration: none; color: white;">Share on Whatsapp <i
+                                class="fa-brands fa-whatsapp" style="color: #63E6BE;"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div class=" map-img">
+        <h1 class="thankyou-heading">Thank you for visiting...</h1>
+
+        <div class="map-container">
+            <div class="map-text-area">
+                <div class="text-box">
+                    <p class="address-heading">
+                        Our Address:
+                    </p>
+                    <p class="kolkata">KOLKATA </p>
+                    <p class="our-address">154-A,Park Street,</p>
+                    <p class="our-address">Kolkata, West Bengal - 700105</p>
+                    <p class="our-address"><i class="fa-solid fa-phone" style="color: #ffffff;"></i><span style="padding-left: 10px;" >+91-9556777657</span></p>
+                </div>
+            </div>
+            <div class="google-map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d25596.9455371069!2d88.33477038176272!3d22.558282296738152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1711835109767!5m2!1sen!2sin"
+                    width="600" height="450" style="border:2px solid white;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <footer>
+            <div class="containter-fluid">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="logo-div">
+                            <table>
+                                <tr>
+                                    <td><i class="text-white logos fa-brands fa-facebook"></i></td>
+                                    <td><i class="text-white logos fa-brands fa-twitter"></i></td>
+                                    <td><i class="text-white logos fa-brands fa-instagram"></i></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-6 address">
+                        <a href="#" class="text-white ">154-A, Park Street, Kolkata, 700105</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
 </body>
